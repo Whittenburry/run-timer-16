@@ -20,6 +20,12 @@ body {
 
 input {
   border: 0;
-  border-bottom: 2px solid $regular-text;
+  border-bottom: 1px solid $placeholder-text;
   outline: 0;
+  background: transparent;
+  color: $brand-blue;
+
+  &::-webkit-input-placeholder {
+     color: $placeholder-text;
+ }
 }

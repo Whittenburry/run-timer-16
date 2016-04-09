@@ -1,1 +1,23 @@
 {{outlet}}
+
+<header class="new-run">
+  <h1 class="new-run__header">New Run</h1>
+</header>
+
+<form class="form" onsubmit="on">
+  <div class="column">
+    <div class="form-fields">
+      {{input class="form-fields__input" type="text" placeholder="Run Time"}}
+    </div>
+    <div class="form-fields">
+      {{input class="form-fields__input" type="text" placeholder="Run Date"}}
+    </div>
+    <div class="form-fields">
+      {{input class="form-fields__input" type="text" placeholder="Race Notes"}}
+    </div>
+  </div>
+  <div class="buttons">
+    {{#link-to "index"}}<button class="buttons__button cancel">Cancel</button>{{/link-to}}
+    {{#link-to "index"}}<button class="buttons__button save">Save</button>{{/link-to}}
+  </div>
+</form>
