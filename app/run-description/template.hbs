@@ -1,23 +1,17 @@
 {{outlet}}
 
-<header class="new-run">
-  <h1 class="new-run__header">My Run</h1>
+<header class="description-header">
+  <h1 class="description-header__title">My Run</h1>
 </header>
 
-<form class="form" {{action saveNewRun on="submit"}}>
-  <div class="column">
-    <div class="form-fields">
-      {{input class="form-fields__input" type="text" placeholder="Run Time" value=runTime}}
+<div class="run-description-container">
+  <form class="run-description-form">
+    <div class="run-info">
+      {{input class="run-info__field description-date" type="text" value=runTime}}
+      {{input class="run-info__field description-time" type="text" value=runDate}}
     </div>
-    <div class="form-fields">
-      {{input class="form-fields__input" type="text" placeholder="Run Date" value=runDate}}
+    <div class="run-info">
+      {{input class="run-info__description" type="text" value=raceNote}}
     </div>
-    <div class="form-fields">
-      {{input class="form-fields__input" type="text" placeholder="Race Notes" value=raceNote}}
-    </div>
-  </div>
-  <div class="buttons">
-    {{#link-to "index"}}<button class="buttons__button cancel">Cancel</button>{{/link-to}}
-    <button class="buttons__button save">Save</button>
-  </div>
-</form>
+  </form>
+</div>
