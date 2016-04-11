@@ -13,6 +13,8 @@
 
     margin: $gutter;
     padding: $gutter;
+
+    border-bottom: 1px solid $placeholder-text;
   }
 }
 
@@ -44,6 +46,6 @@
   background: $button-green;
 
   &:hover {
-    background: #dfc121;
+    background: $brand-golden;
   }
 }

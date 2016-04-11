@@ -1,0 +1,66 @@
+.description-header {
+  padding: $gutter $gutter 0;
+  color: $brand-white;
+
+  &__title {
+    margin: 0;
+    padding: $gutter $gutter 0;
+  }
+}
+
+.run-description-container {
+  margin: $gutter 0;
+  padding: 0 $gutter $gutter;
+}
+
+.run-description-form {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+
+  margin: 0;
+}
+
+.run-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  padding: $gutter;
+
+  &__description {
+    padding: $gutter;
+    border: 0;
+    background: transparent;
+    color: $regular-text;
+  }
+
+  &__button {
+    justify-content: space-between;
+
+    margin: $gutter;
+    padding: $gutter * 2;
+
+    border-radius: 50%;
+
+    background: $button-green;
+    color: $brand-white;
+  }
+}
+
+.back {
+  color: $button-text-grey;
+}
+
+.update {
+  color: $brand-edit;
+}
+
+.description-date {
+  color: $regular-text;
+}
+
+.description-time {
+  color: $green-text;
+  text-align: right;
+}

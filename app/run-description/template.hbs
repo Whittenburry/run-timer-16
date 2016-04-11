@@ -7,11 +7,15 @@
 <div class="run-description-container">
   <form class="run-description-form">
     <div class="run-info">
-      {{input class="run-info__field description-date" type="text" value=runTime}}
-      {{input class="run-info__field description-time" type="text" value=runDate}}
+      {{input class="run-info__field description-date" placeholder="April 10, 2016" type="text" value=model.runTime}}
+      {{input class="run-info__field description-time" placeholder="00:28:25" type="text" value=model.runDate}}
     </div>
     <div class="run-info">
-      {{input class="run-info__description" type="text" value=raceNote}}
+      {{textarea class="run-info__description" autoresize=true rows="7" cols="42" placeholder="Today, is a day like no other, tis the best day on the planet to be alive" type="msg" value=model.raceNote}}
+    </div>
+    <div class="run-info">
+      {{#link-to "index"}}<button class="run-info__button back fa fa-chevron-left"></button>{{/link-to}}
+      <button class="run-info__button update fa fa-pencil"></button>
     </div>
   </form>
 </div>

@@ -20,7 +20,6 @@ body {
 
 input {
   border: 0;
-  border-bottom: 1px solid $placeholder-text;
   outline: 0;
   background: transparent;
   color: $green-text;
@@ -32,4 +31,17 @@ input {
 
 a:link {
   text-decoration: none;
+}
+
+textarea {
+  outline: none;
+  resize: none;
+}
+
+::-webkit-input-placeholder {
+   color: $placeholder-text;
+}
+
+button {
+  outline: none;
 }
