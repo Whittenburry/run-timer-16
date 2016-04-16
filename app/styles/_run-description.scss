@@ -24,12 +24,14 @@
 .run-info {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
-  padding: $gutter;
+  padding: 0 $gutter;
 
   &__description {
-    padding: $gutter;
+    margin: 0;
+    padding: 0 $gutter $gutter;
+
     border: 0;
     background: transparent;
     color: $regular-text;
@@ -49,10 +51,14 @@
 }
 
 .back {
+  margin-left: $gutter * 4;
+
+  background: $button-grey;
   color: $button-text-grey;
 }
 
 .update {
+  margin-right: $gutter * 4;
   color: $brand-edit;
 }
 
