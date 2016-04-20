@@ -20,7 +20,7 @@
     </div>
     <div class="buttons">
       {{#link-to "index"}}<button class="run-info__button back fa fa-chevron-left"></button>{{/link-to}}
-      {{#link-to "edit" model._id}}<button class="run-info__button update-edit-save fa fa-floppy-o"></button>{{/link-to}}
+      <button class="run-info__button update-edit-save fa fa-floppy-o" {{action editCurrentRun model}}></button>
     </div>
   </form>
 </div>
