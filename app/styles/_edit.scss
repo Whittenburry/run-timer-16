@@ -1,0 +1,18 @@
+.description-header__directions {
+  margin: 0;
+  padding: $gutter 0 0 $gutter;
+  font-weight: lighter;
+}
+
+.update-edit-save {
+  margin-right: $gutter;
+  color: $button-text-grey;
+}
+
+.edit-textarea {
+  border: 0;
+  border-bottom: $brand-border;
+
+  background: transparent;
+  color: $green-text;
+}

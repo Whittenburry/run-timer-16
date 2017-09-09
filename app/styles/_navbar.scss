@@ -1,0 +1,16 @@
+.navbar-container {
+  width: 100%;
+
+  padding: $gutter;
+  background: $brand-blue;
+}
+
+.navbar {
+  width: $max-content-width;
+}
+
+.title {
+  width: 100%;
+  padding-left: $gutter;
+  color: $brand-white;
+}

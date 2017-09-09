@@ -1,0 +1,72 @@
+.description-header {
+  padding: $gutter $gutter 0;
+  color: $brand-white;
+
+  &__title {
+    margin: 0;
+    padding: $gutter;
+  }
+}
+
+.run-description-container {
+  margin: $gutter 0;
+  padding: 0 $gutter $gutter;
+}
+
+.run-description-form {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+
+  margin: 0;
+}
+
+.run-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 $gutter;
+
+  &__description {
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+    background: transparent;
+    color: $regular-text;
+  }
+
+  &__button {
+    justify-content: space-between;
+
+    margin-top: $gutter * 2;
+    padding: $gutter * 2;
+
+    border-radius: 50%;
+
+    background: $button-green;
+    color: $brand-white;
+  }
+}
+
+.back {
+  margin-left: $gutter;
+
+  background: $button-grey;
+  color: $button-text-grey;
+}
+
+.update {
+  margin-right: $gutter;
+  color: $brand-edit;
+}
+
+.description-date {
+  color: $regular-text;
+}
+
+.description-time {
+  color: $green-text;
+  text-align: right;
+}

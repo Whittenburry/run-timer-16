@@ -1,0 +1,70 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 88vh;
+
+  margin: 0;
+
+  background: $button-text-grey;
+  color: $regular-text;
+}
+
+.time-container-container-container-container {
+  flex-grow: 1;
+
+  width: 100%;
+
+  padding: 0 $gutter;
+}
+
+.time-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin: 0;
+  padding-top: $gutter;
+
+  border-bottom: $brand-border;
+
+  &__date {
+    text-align: left;
+  }
+
+  &__date-item {
+    width: 100% / 2 - #{$gutter};
+
+    margin: 0;
+    padding: $gutter;
+
+    color: $regular-text;
+  }
+
+  &__time {
+    text-align: right;
+  }
+
+  &__time-item {
+    width: 100% / 2 - #{$gutter};
+
+    margin: 0;
+    padding: $gutter;
+
+    color: $green-text;
+  }
+}
+
+.footer {
+  text-align: right;
+}
+
+.add-new {
+  margin: $gutter;
+  padding: $gutter * 2;
+
+  border-radius: 50%;
+
+  background: $button-green;
+  color: $brand-white;
+}
